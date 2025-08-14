@@ -3,6 +3,9 @@
 ![GitHub](https://img.shields.io/badge/.NET-7.0-blue)
 ![GitHub](https://img.shields.io/badge/JWT-Authentication-yellow)
 ![GitHub](https://img.shields.io/badge/SQLite-Database-green)
+![GitHub](https://img.shields.io/badge/Backend-.NET%207-blue)
+![GitHub](https://img.shields.io/badge/Mobile-Android%20(Kotlin)-green)
+![GitHub](https://img.shields.io/badge/Auth-JWT-yellow)
 
 API completa para gerenciamento de contatos pessoais com autenticação segura via JWT.
 
@@ -16,24 +19,33 @@ API completa para gerenciamento de contatos pessoais com autenticação segura v
 - ✅ Documentação Swagger (em desenvolvimento)
 
 
-## Estrutura do Código Android
+# 📱 Agenda de Contatos - Full Stack
 
-mobile/
-├── app/
-│   ├── src/main/
-│   │   ├── java/com/example/agenda/
-│   │   │   ├── di/           # Injeção de dependência
-│   │   │   ├── model/        # Modelos de dados
-│   │   │   ├── network/      # Configuração da API
-│   │   │   ├── repository/   # Lógica de dados
-│   │   │   ├── ui/           # Componentes de UI
-│   │   │   │   ├── auth/     # Telas de autenticação
-│   │   │   │   ├── contacts/ # Telas de contatos
-│   │   │   │   └── components # Componentes compartilhados
-│   │   │   └── utils/        # Utilitários
-│   │   └── res/              # Recursos do app
+Solução completa para gerenciamento de contatos com backend em .NET e aplicativo Android nativo.
 
+## 📦 Componentes do Projeto
 
+### Backend (API)
+- API RESTful com .NET 7
+- Autenticação JWT
+- Banco de dados SQLite
+- Entity Framework Core
+- Swagger para documentação
+
+### Mobile (Android)
+- Aplicativo nativo em Kotlin
+- Consumo da API REST
+- Armazenamento local com Room
+- Material Design 3
+- Jetpack Compose
+
+## 🚀 Como Executar
+
+### Backend
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/agenda-contatos.git
+   cd agenda-contatos/backend
 ## 🛠️ Tecnologias Utilizadas
 
 - .NET 7
