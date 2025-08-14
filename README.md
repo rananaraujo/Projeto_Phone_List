@@ -1,102 +1,36 @@
-# Projeto_Phone_List
+# Agenda API - Backend de Gerenciamento de Contatos
 
-API de Agenda de Contatos com Autenticação JWT
-Visão Geral
-Este projeto implementa uma API RESTful para gerenciamento de contatos pessoais com autenticação segura usando JWT (JSON Web Tokens). A API permite:
+![GitHub](https://img.shields.io/badge/.NET-7.0-blue)
+![GitHub](https://img.shields.io/badge/JWT-Authentication-yellow)
+![GitHub](https://img.shields.io/badge/SQLite-Database-green)
 
-Cadastro e autenticação de usuários
+API completa para gerenciamento de contatos pessoais com autenticação segura via JWT.
 
-CRUD completo de contatos
+## 📋 Funcionalidades
 
-Proteção de endpoints com JWT
+- ✅ Autenticação segura com JWT
+- ✅ CRUD completo de contatos
+- ✅ Validação de dados
+- ✅ Banco de dados SQLite integrado
+- ✅ Seed automático de dados iniciais
+- ✅ Documentação Swagger (em desenvolvimento)
 
-Validação de dados e segurança básica
+## 🛠️ Tecnologias Utilizadas
 
-Configuração
-Banco de Dados
-Utiliza SQLite como banco de dados embutido
+- .NET 7
+- Entity Framework Core
+- JWT Authentication
+- SQLite
+- Swagger/OpenAPI
 
-Configuração automática do banco na primeira execução
+## 🔧 Configuração do Ambiente
 
-Popula dados iniciais para testes:
+1. **Pré-requisitos**:
+   - [.NET 7 SDK](https://dotnet.microsoft.com/download)
+   - Visual Studio Code ou Visual Studio (opcional)
 
-Um usuário admin padrão (admin@example.com / Admin123)
-
-Um contato de exemplo
-
-Autenticação JWT
-Configuração do middleware de autenticação
-
-Geração de tokens com validade configurável
-
-Validação automática de tokens em requisições
-
-Estrutura do Projeto
-Principais Componentes
-Models:
-
-Usuario: Modelo para usuários do sistema
-
-Contato: Modelo para contatos da agenda
-
-LoginRequest: DTO para requisições de login
-
-Controllers:
-
-AuthController: Endpoints para registro e login
-
-ContatosController: CRUD de contatos (protegido por autenticação)
-
-Services:
-
-AuthService: Lógica de geração de tokens JWT
-
-Data:
-
-AgendaContext: Configuração do Entity Framework Core
-
-Como Executar
-Instale as dependências:
-
-bash
-dotnet restore
-Execute a aplicação:
-
-bash
-dotnet run
-Acesse a documentação da API (em desenvolvimento):
-
-text
-http://localhost:<port>/swagger
-Endpoints Principais
-Autenticação
-POST /api/auth/register: Registrar novo usuário
-
-POST /api/auth/login: Autenticar e obter token JWT
-
-Contatos (requer autenticação)
-GET /api/contatos: Listar todos os contatos do usuário
-
-POST /api/contatos: Criar novo contato
-
-GET /api/contatos/{id}: Obter contato específico
-
-PUT /api/contatos/{id}: Atualizar contato
-
-DELETE /api/contatos/{id}: Remover contato
-
-Segurança
-Todas as senhas são armazenadas como hash usando BCrypt
-
-Endpoints protegidos por autenticação JWT
-
-Validação de dados de entrada
-
-Configuração básica de CORS (em desenvolvimento)
-
-Testes
-A API inclui um endpoint de exemplo para testes:
-
-text
-GET /weatherforecast
-New chat
+2. **Instalação**:
+   ```bash
+   git clone https://github.com/seu-usuario/AgendaAPI.git
+   cd AgendaAPI
+   dotnet restore
