@@ -25,27 +25,13 @@ Solução completa para gerenciamento de contatos com backend em .NET e aplicati
 
 ## 📦 Componentes do Projeto
 
-### Backend (API)
-- API RESTful com .NET 7
-- Autenticação JWT
-- Banco de dados SQLite
-- Entity Framework Core
-- Swagger para documentação
-
 ### Mobile (Android)
-- Aplicativo nativo em Kotlin
+- Aplicativo nativo em Java
 - Consumo da API REST
 - Armazenamento local com Room
 - Material Design 3
 - Jetpack Compose
 
-## 🚀 Como Executar
-
-### Backend
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/agenda-contatos.git
-   cd agenda-contatos/backend
 ## 🛠️ Tecnologias Utilizadas
 
 - .NET 7
@@ -54,14 +40,3 @@ Solução completa para gerenciamento de contatos com backend em .NET e aplicati
 - SQLite
 - Swagger/OpenAPI
 - Android
-## 🔧 Configuração do Ambiente
-
-1. **Pré-requisitos**:
-   - [.NET 7 SDK](https://dotnet.microsoft.com/download)
-   - Visual Studio Code ou Visual Studio (opcional)
-
-2. **Instalação**:
-   ```bash
-   git clone https://github.com/seu-usuario/AgendaAPI.git
-   cd AgendaAPI
-   dotnet restore
