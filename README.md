@@ -15,8 +15,6 @@ API completa para gerenciamento de contatos pessoais com autenticação segura v
 - ✅ CRUD completo de contatos
 - ✅ Validação de dados
 - ✅ Banco de dados SQLite integrado
-- ✅ Seed automático de dados iniciais
-- ✅ Documentação Swagger (em desenvolvimento)
 
 
 # 📱 Agenda de Contatos - Full Stack
@@ -28,15 +26,10 @@ Solução completa para gerenciamento de contatos com backend em .NET e aplicati
 ### Mobile (Android)
 - Aplicativo nativo em Java
 - Consumo da API REST
-- Armazenamento local com Room
-- Material Design 3
-- Jetpack Compose
 
 ## 🛠️ Tecnologias Utilizadas
 
 - .NET 7
-- Entity Framework Core
 - JWT Authentication
 - SQLite
-- Swagger/OpenAPI
 - Android
