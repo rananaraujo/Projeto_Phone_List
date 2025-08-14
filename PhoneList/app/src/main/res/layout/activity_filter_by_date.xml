@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".FilterByDateActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupFilterOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:buttonTint="@color/colorTextPrimary"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/colorTextPrimary"
+            android:text="Data de Cadastro (Mais recentes primeiro)"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioAlteracao"
+            android:layout_width="match_parent"
+            app:buttonTint="@color/colorTextPrimary"
+            android:layout_height="wrap_content"
+            android:text="Data de Última Alteração (Mais recentes primeiro)"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnApplyFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicar Filtro"
+        app:backgroundTint="@color/colorTextPrimary"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="8dp"/>
+</LinearLayout>
