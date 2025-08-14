@@ -15,6 +15,25 @@ API completa para gerenciamento de contatos pessoais com autenticação segura v
 - ✅ Seed automático de dados iniciais
 - ✅ Documentação Swagger (em desenvolvimento)
 
+
+## Estrutura do Código Android
+
+mobile/
+├── app/
+│   ├── src/main/
+│   │   ├── java/com/example/agenda/
+│   │   │   ├── di/           # Injeção de dependência
+│   │   │   ├── model/        # Modelos de dados
+│   │   │   ├── network/      # Configuração da API
+│   │   │   ├── repository/   # Lógica de dados
+│   │   │   ├── ui/           # Componentes de UI
+│   │   │   │   ├── auth/     # Telas de autenticação
+│   │   │   │   ├── contacts/ # Telas de contatos
+│   │   │   │   └── components # Componentes compartilhados
+│   │   │   └── utils/        # Utilitários
+│   │   └── res/              # Recursos do app
+
+
 ## 🛠️ Tecnologias Utilizadas
 
 - .NET 7
@@ -22,7 +41,7 @@ API completa para gerenciamento de contatos pessoais com autenticação segura v
 - JWT Authentication
 - SQLite
 - Swagger/OpenAPI
-
+- Android
 ## 🔧 Configuração do Ambiente
 
 1. **Pré-requisitos**:
